@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ViralSprint - Fuel Your Business with Viral Content</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1',
+            accent: '#a855f7',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-950 text-white font-sans">
+  <!-- Site content omitted for brevity -->
+  <footer class="py-10 px-6 bg-black text-center text-sm text-gray-500">
+    &copy; 2025 ViralSprint. All rights reserved. | Built with love by SiteCrafterGPT
+  </footer>
+  <script>
+    function generateViral() {
+      const niche = document.getElementById('niche').value;
+      const goal = document.getElementById('goal').value;
+      const output = document.getElementById('output');
+      if (!niche || !goal) {
+        output.textContent = 'Please fill in both fields.';
+        return;
+      }
+      const hook = `"If you're in ${niche}, and want to ${goal}, read this before you post again."`;
+      output.textContent = hook;
+    }
+  </script>
+</body>
+</html>
